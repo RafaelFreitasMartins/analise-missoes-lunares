@@ -1,4 +1,4 @@
-#  Analise-missoes-lunares
+#  Analise missões lunares
 Este dashboard apresenta uma análise de 166 missões lunares, mostrando os principais operadores, tipos de missão e resultados.
 
 Os Estados Unidos, principalmente a NASA, lideram com 61 missões, seguidos pela União Soviética. O tipo de missão mais comum foi Orbiter, com 59 registros.
