@@ -1,0 +1,29 @@
+# Clonando a base de dados para realização do exercicio
+!git clone https://github.com/RafaelFreitasMartins/analise-missoes-lunares.git
+
+
+#Importando as Bibliotecas
+import pandas as pd
+!pip install numpy
+
+
+# O pandas irá ler o arquivo
+df_lua = pd.read_csv('/content/analise-missoes-lunares/Moonlanding.csv')
+display(df_lua)
+
+# O comando info, mostra as informacoes gerais de uma base de dados
+df_lua.info()
+
+#O comando describe mostra dados de estatistica básica na base de dados
+df_lua.describe()
+
+
+#Solicitação das seguintes informações
+#1 - quantas missões por operador
+display(df_lua['Operator'].value_counts())
+
+#2- quantas missoes por "Mission Type"
+display(df_lua['Mission Type'].value_counts())
+
+#porcentagem de sucesso das missões
+display(df_lua['Outcome'].value_counts(normalize=True)*100)
